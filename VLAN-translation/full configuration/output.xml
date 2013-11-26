@@ -1,0 +1,505 @@
+<nsdl>
+  <network>
+    <templates/>
+    <objects>
+      <link id="ethernet_19">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_8" destination="controllerOpenflow_9"/>
+      </link>
+      <link id="ethernet_18">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_7" destination="controllerOpenflow_9"/>
+      </link>
+      <link id="ethernet_17">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_6" destination="controllerOpenflow_9"/>
+      </link>
+      <link id="ethernet_16">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_6" destination="switchOpenflow_8"/>
+      </link>
+      <link id="ethernet_15">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_8" destination="computer_5"/>
+      </link>
+      <link id="ethernet_14">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_8" destination="computer_4"/>
+      </link>
+      <link id="ethernet_13">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_7" destination="switchOpenflow_8"/>
+      </link>
+      <link id="ethernet_12">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_7" destination="computer_3"/>
+      </link>
+      <link id="ethernet_11">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_7" destination="computer_2"/>
+      </link>
+      <link id="ethernet_10">
+        <delay/>
+        <loss/>
+        <maxqueue/>
+        <connection source="switchOpenflow_6" destination="switchOpenflow_7"/>
+      </link>
+      <computer id="computer_2">
+        <computerIPAddress>10.0.0.2</computerIPAddress>
+        <mask>255.255.255.0</mask>
+        <computerMacAddress>00:00:00:00:00:02</computerMacAddress>
+        <notes/>
+      </computer>
+      <computer id="computer_3">
+        <computerIPAddress>10.0.0.3</computerIPAddress>
+        <mask>255.255.255.0</mask>
+        <computerMacAddress>00:00:00:00:00:03</computerMacAddress>
+        <notes/>
+      </computer>
+      <computer id="computer_4">
+        <computerIPAddress>10.0.0.4</computerIPAddress>
+        <mask>255.255.255.0</mask>
+        <computerMacAddress>00:00:00:00:00:04</computerMacAddress>
+        <notes/>
+      </computer>
+      <computer id="computer_5">
+        <computerIPAddress>10.0.0.5</computerIPAddress>
+        <mask>255.255.255.0</mask>
+        <computerMacAddress>00:00:00:00:00:05</computerMacAddress>
+        <notes/>
+      </computer>
+      <switchOpenflow id="switchOpenflow_6">
+        <switchMacAddress>00:00:00:00:00:06</switchMacAddress>
+        <notes/>
+      </switchOpenflow>
+      <switchOpenflow id="switchOpenflow_7">
+        <switchMacAddress>00:00:00:00:00:07</switchMacAddress>
+        <notes/>
+      </switchOpenflow>
+      <switchOpenflow id="switchOpenflow_8">
+        <switchMacAddress>00:00:00:00:00:08</switchMacAddress>
+        <notes/>
+      </switchOpenflow>
+      <controllerOpenflow id="controllerOpenflow_9">
+        <controllerIPAddress>127.0.0.1</controllerIPAddress>
+        <controllerPort>6633</controllerPort>
+        <specialController>none</specialController>
+        <openflowController>pox</openflowController>
+      </controllerOpenflow>
+    </objects>
+    <views/>
+  </network>
+  <scenarios>
+    <visualizations>
+      <visualization id="vis01">
+        <description>
+          <object id="computer_2">
+            <x.position>109</x.position>
+            <y.position>345</y.position>
+            <z.position>0</z.position>
+            <color/>
+          </object>
+          <object id="computer_3">
+            <x.position>430</x.position>
+            <y.position>431</y.position>
+            <z.position>0</z.position>
+            <color/>
+          </object>
+          <object id="computer_4">
+            <x.position>673</x.position>
+            <y.position>75</y.position>
+            <z.position>0</z.position>
+            <color/>
+          </object>
+          <object id="computer_5">
+            <x.position>937</x.position>
+            <y.position>347</y.position>
+            <z.position>0</z.position>
+            <color/>
+          </object>
+          <object id="switchOpenflow_6">
+            <x.position>116</x.position>
+            <y.position>135</y.position>
+            <z.position>0</z.position>
+            <color/>
+          </object>
+          <object id="switchOpenflow_7">
+            <x.position>375</x.position>
+            <y.position>269</y.position>
+            <z.position>0</z.position>
+            <color/>
+          </object>
+          <object id="switchOpenflow_8">
+            <x.position>625</x.position>
+            <y.position>263</y.position>
+            <z.position>0</z.position>
+            <color/>
+          </object>
+          <object id="controllerOpenflow_9">
+            <x.position>403</x.position>
+            <y.position>54</y.position>
+            <z.position>0</z.position>
+            <color/>
+          </object>
+        </description>
+      </visualization>
+    </visualizations>
+    <simulations/>
+    <openflow>
+      <flowTable1 id="controllerOpenflow_9">
+        <flowName>SW1_VLAN10</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:07</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>2</ingressPort>
+        <vlanID>null</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>10.0.0.5</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>10</setVlanID>
+        <setOutput>4</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>null</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable1>
+      <flowTable2 id="controllerOpenflow_9">
+        <flowName>SW1_VLAN10-reverse</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:07</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>4</ingressPort>
+        <vlanID>10</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>10.0.0.2</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>null</setVlanID>
+        <setOutput>2</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>yes</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable2>
+      <flowTable3 id="controllerOpenflow_9">
+        <flowName>SW2_VLAN10</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:08</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>3</ingressPort>
+        <vlanID>null</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>10.0.0.2</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>10</setVlanID>
+        <setOutput>1</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>null</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable3>
+      <flowTable4 id="controllerOpenflow_9">
+        <flowName>SW2_VLAN10-reverse</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:08</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>1</ingressPort>
+        <vlanID>10</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>10.0.0.5</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>null</setVlanID>
+        <setOutput>3</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>yes</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable4>
+      <flowTable5 id="controllerOpenflow_9">
+        <flowName>SW1_VLAN20</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:07</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>3</ingressPort>
+        <vlanID>null</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>10.0.0.4</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>20</setVlanID>
+        <setOutput>4</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>null</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable5>
+      <flowTable6 id="controllerOpenflow_9">
+        <flowName>SW1_VLAN20-reverse</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:07</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>4</ingressPort>
+        <vlanID>20</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>10.0.0.3</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>null</setVlanID>
+        <setOutput>3</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>yes</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable6>
+      <flowTable7 id="controllerOpenflow_9">
+        <flowName>SW2_VLAN20</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:08</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>2</ingressPort>
+        <vlanID>null</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>10.0.0.3</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>20</setVlanID>
+        <setOutput>1</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>null</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable7>
+      <flowTable8 id="controllerOpenflow_9">
+        <flowName>SW2_VLAN20-reverse</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:08</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>1</ingressPort>
+        <vlanID>20</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>10.0.0.4</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>null</setVlanID>
+        <setOutput>2</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>yes</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable8>
+      <flowTable9 id="controllerOpenflow_9">
+        <flowName>TRUNK1</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:07</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort/>
+        <vlanID>null</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>null</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>null</setVlanID>
+        <setOutput>1</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>null</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable9>
+      <flowTable10 id="controllerOpenflow_9">
+        <flowName>TRUNK2</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:08</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort/>
+        <vlanID>null</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>null</ipSource>
+        <ipDestination>null</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>null</setVlanID>
+        <setOutput>4</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>null</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable10>
+      <flowTable11 id="controllerOpenflow_9">
+        <flowName>VLAN-translation</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:06</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>1</ingressPort>
+        <vlanID>10</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>10.0.0.2</ipSource>
+        <ipDestination>10.0.0.4</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>20</setVlanID>
+        <setOutput>2</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>null</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable11>
+      <flowTable12 id="controllerOpenflow_9">
+        <flowName>VLAN-translation-2</flowName>
+        <priority>32768</priority>
+        <macSwitch>00:00:00:00:00:06</macSwitch>
+        <macSource/>
+        <macDestination/>
+        <ingressPort>2</ingressPort>
+        <vlanID>20</vlanID>
+        <vlanPriority/>
+        <ethtype/>
+        <tos/>
+        <ipSource>10.0.0.4</ipSource>
+        <ipDestination>10.0.0.2</ipDestination>
+        <sourcePort/>
+        <destinationPort/>
+        <setIPSource/>
+        <setIPDestination/>
+        <setMACSource/>
+        <setMACDestination/>
+        <setSourcePort/>
+        <setDestinationPort/>
+        <setVlanID>10</setVlanID>
+        <setOutput>1</setOutput>
+        <setVLANPriority/>
+        <setStripVlan>null</setStripVlan>
+        <setEnqueue/>
+        <notes/>
+      </flowTable12>
+    </openflow>
+  </scenarios>
+</nsdl>
